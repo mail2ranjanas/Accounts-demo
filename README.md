@@ -46,3 +46,46 @@ Run AccountsControllerUnitTests as a test
 Define spring security for Authantication/Authorisation
 Define dedicated service layer - In the current design, Repository (DAO)s are injected to controller (API)
 Define Frontend
+
+.
+├── HELP.md
+├── README.md
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── com
+│   │   │       └── account
+│   │   │           ├── AccountApplication.java
+│   │   │           ├── api
+│   │   │           │   └── AccountController.java
+│   │   │           ├── exception
+│   │   │           │   ├── AccountExceptionHandler.java
+│   │   │           │   ├── AccountNotFoundException.java
+│   │   │           │   ├── ExceptionResponse.java
+│   │   │           │   └── TransactionNotFoundException.java
+│   │   │           ├── model
+│   │   │           │   ├── Account.java
+│   │   │           │   ├── Transactions.java
+│   │   │           │   └── User.java
+│   │   │           ├── repo
+│   │   │           │   ├── AccountRepo.java
+│   │   │           │   └── TransactionRepo.java
+│   │   │           ├── response
+│   │   │           │   ├── AccountResponse.java
+│   │   │           │   ├── PageResponse.java
+│   │   │           │   └── TransactionResponse.java
+│   │   │           └── swagger
+│   │   │               └── SwaggerConfig.java
+│   │   └── resources
+│   │       ├── application.properties
+│   │       ├── data.sql
+│   │       └── schema.sql
+│   └── test
+│       └── java
+│           └── com
+│               └── account
+│                   ├── AccountApplicationTests.java
+│                   └── AccountsControllerUnitTests.java
