@@ -40,3 +40,9 @@ API Doc  | http://localhost:8080/v2/api-docs
 # Unit Testing
 
 Run AccountsControllerUnitTests as a test  
+
+# TODO
+
+Define spring security for Authantication/Authorisation
+Define dedicated service layer - In the current design, Repository (DAO)s are injected to controller (API)
+Define Frontend
